@@ -21,7 +21,7 @@ async def get_weather(message: types.Message):
     try:
         # запрос
         response = requests.get(
-            f"http://api.openweathermap.org/data/2.5/weather?q=москва&lang=ru&units=metric&appid=d57f923cde6dee91ecaacfb03f3f2618"
+            f"http://api.openweathermap.org/data/2.5/weather?q=москва&lang=ru&units=metric&appid=your_open_weather_key"
         )
         # парсинг ответа OpenWeather в формате JSON
         data = response.json()
