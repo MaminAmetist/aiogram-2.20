@@ -18,6 +18,7 @@ async def start_command(message: types.Message):
 
 @dp.message_handler()
 async def get_weather(message: types.Message):
+    """Парсинг метеосайта и передача данных в сообщении бота"""
     try:
         # запрос
         response = requests.get(
